@@ -33,10 +33,14 @@ public class Entity : MonoBehaviour
 
     protected virtual void FixedUpdate() { } 
 
-    protected virtual void takeDamage() 
-    { 
-        
-    
+    protected virtual void takeDamage(int damage) 
+    {
+        healt -= damage;
+        if (healt <= 0)
+        {
+            die();
+        }
+
     } 
 
     protected void Move(Vector2 direction)
