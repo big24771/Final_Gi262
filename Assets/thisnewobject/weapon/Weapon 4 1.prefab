@@ -80,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -144335857, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
   shootFoce: 0
   ammo: {fileID: 2485677380715497881, guid: 1d21674b52fe90e429713928f4ced21a, type: 3}
   firePoint: {fileID: 4563062318320748761}
-  shootForce2: 1
+  shootForce2: 0.1
 --- !u!1 &5906904333628905600
 GameObject:
   m_ObjectHideFlags: 0

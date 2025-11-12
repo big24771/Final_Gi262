@@ -7,6 +7,9 @@ public class Entity : MonoBehaviour
     protected Rigidbody2D rb;
     [SerializeField] protected int healt;
     protected SpriteRenderer Flip;
+
+
+    protected virtual void Start() { }
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,7 +36,7 @@ public class Entity : MonoBehaviour
 
     protected virtual void FixedUpdate() { } 
 
-    protected virtual void takeDamage(int damage) 
+    public virtual void takeDamage(int damage) 
     {
         healt -= damage;
         if (healt <= 0)
@@ -48,13 +51,13 @@ public class Entity : MonoBehaviour
         if (rb != null)
         {
             rb.velocity = direction * speed;
-            if (direction.x > 0 && Flip != null) // ถ้าเคลื่อนที่ไปทางขวา
+            if (direction.x > 0 && Flip != null) 
             {
-                Flip.flipX = false; // ไม่ต้องพลิก (มองไปทางขวา)
+                Flip.flipX = false; 
             }
-            else if (direction.x < 0 && Flip != null) // ถ้าเคลื่อนที่ไปทางซ้าย
+            else if (direction.x < 0 && Flip != null) 
             {
-                Flip.flipX = true; // พลิกภาพ (มองไปทางซ้าย)
+                Flip.flipX = true; 
             }
 
         }
