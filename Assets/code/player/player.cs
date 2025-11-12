@@ -63,7 +63,7 @@ public class player : Entity
         Quaternion targetRotation = Quaternion.Euler(0f, 0f, angle);
 
         weaponHoldPoint.rotation = targetRotation;
-    }
+    }//mousecheck
 
     protected override void Update()
     {
