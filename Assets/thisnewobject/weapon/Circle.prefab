@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ammo
   time: 2
-  damage: 2
+  damage: 10
 --- !u!61 &-1154394319371218731
 BoxCollider2D:
   m_ObjectHideFlags: 0
