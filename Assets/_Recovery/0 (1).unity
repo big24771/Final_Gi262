@@ -180,37 +180,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e16c3ac05167e74980d831f14450089, type: 3}
---- !u!1 &225612953
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 225612954}
-  m_Layer: 0
-  m_Name: potion
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &225612954
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225612953}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2114600072}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &376482424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,68 +1950,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1619119865
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1619119866}
-  m_Layer: 0
-  m_Name: wall
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1619119866
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619119865}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2114600072}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1704938786
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1704938787}
-  m_Layer: 0
-  m_Name: floor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1704938787
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704938786}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2114600072}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1759098875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2683,25 +2590,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9387c05638491614596e9b67793cd33b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::map
-  X: 50
-  Y: 50
-  floorsPrefab:
-  - {fileID: 2859071554521189801, guid: 46727d3e53ab5c34daaa3ca5315e5c45, type: 3}
-  topWallsPrefab:
-  - {fileID: 7088932067464872554, guid: c896c629e04ccea40b6abbf51f0b9d37, type: 3}
-  bottomWallsPrefab:
-  - {fileID: 7088932067464872554, guid: c896c629e04ccea40b6abbf51f0b9d37, type: 3}
-  leftWallsPrefab:
-  - {fileID: 3826111217154870008, guid: e4d8355a18e938e4aa868d0900b428f4, type: 3}
-  rightWallsPrefab:
-  - {fileID: 3826111217154870008, guid: e4d8355a18e938e4aa868d0900b428f4, type: 3}
-  floorParent: {fileID: 1704938787}
-  wallParent: {fileID: 1619119866}
-  itemParent: {fileID: 225612954}
-  itemPrefabs:
-  - {fileID: 595011773673906685, guid: 2329dce087935bf4f8d184480b534cc7, type: 3}
-  totalItemCount: 10
-  exitPrefab: {fileID: 9044384588592843980, guid: d54668cea851b1d43b8fdaa44dd16c49, type: 3}
+  floorPrefab: {fileID: 2859071554521189801, guid: 46727d3e53ab5c34daaa3ca5315e5c45, type: 3}
+  wallPrefab: {fileID: 3826111217154870008, guid: e4d8355a18e938e4aa868d0900b428f4, type: 3}
+  itemPrefab: {fileID: 0}
+  mapWidth: 20
+  mapHeight: 15
+  tileSize: 1
 --- !u!4 &2114600072
 Transform:
   m_ObjectHideFlags: 0
@@ -2714,10 +2608,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1619119866}
-  - {fileID: 1704938787}
-  - {fileID: 225612954}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807

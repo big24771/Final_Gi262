@@ -13,8 +13,28 @@ public class ammo : MonoBehaviour
    
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Entity targetEntity = collision.gameObject.GetComponent<Entity>();
-        Destroy(this.gameObject);
-        targetEntity.takeDamage(damage);
+        player player = collision.gameObject.GetComponent<player>();
+
+        if (player != null)
+        {
+          
+            Debug.Log("Bullet hit Player, but no damage applied.");
+            Destroy(gameObject);
+            return; 
+        }
+
+
+        Entity target = collision.gameObject.GetComponent<Entity>();
+
+        if (target != null)
+        {          
+            target.takeDamage(damage);
+            
+            Destroy(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
