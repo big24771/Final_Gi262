@@ -63,6 +63,23 @@ public class player : Entity
         Quaternion targetRotation = Quaternion.Euler(0f, 0f, angle);
 
         weaponHoldPoint.rotation = targetRotation;
+
+        if (direction.x < 0)
+        {
+            
+            weaponHoldPoint.localScale = new Vector3(
+                weaponHoldPoint.localScale.x,-1f, 
+                weaponHoldPoint.localScale.z
+            );
+        }
+        else
+        {
+           
+            weaponHoldPoint.localScale = new Vector3(
+                weaponHoldPoint.localScale.x,1f,  
+                weaponHoldPoint.localScale.z
+            );
+        }
     }//mousecheck
 
     protected override void Update()
